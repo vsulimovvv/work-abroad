@@ -1,8 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
   //   // * ===== Mask input
   //   $('input[type="tel"]').mask('+7 (999) 999-99-99');
-  //   // * ===== Nice Select
-  //   // $('select').niceSelect();
+
+  // * ===== Nice Select
+  $('select').niceSelect();
 
   // * ===== Slider
   (function slider() {
@@ -66,6 +67,62 @@ window.addEventListener('DOMContentLoaded', () => {
     changeBg();
   })();
 
+  // * ===== Show Filters
+  (function showFilters() {
+    const menuBtn = document.querySelector('.catalog-vacancies__filter');
+    const menu = document.querySelector('.catalog-vacancies__left');
+    const menuClose = document.querySelector('.catalog-vacancies__close');
+    const body = document.querySelector('body');
+    const overlay = document.querySelector('.overlay');
+
+    if (menuBtn) {
+      menuBtn.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+      });
+
+      overlay.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+
+      menuClose.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+    }
+  })();
+
+  // * ===== Show Aside
+  (function showMenu() {
+    const menuBtn = document.querySelector('.show-aside-btn');
+    const menu = document.querySelector('.aside');
+    const menuCloseBtn = document.querySelector('.mobile-menu__close');
+    const body = document.querySelector('body');
+    const overlay = document.querySelector('.overlay');
+
+    if (menu) {
+      menuBtn.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+      });
+      overlay.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+      menuCloseBtn.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+    }
+  })();
+
   // * ===== Show Menu
   (function showMenu() {
     const menuBtn = document.querySelector('.header__toggle');
@@ -73,22 +130,44 @@ window.addEventListener('DOMContentLoaded', () => {
     const menuCloseBtn = document.querySelector('.mobile-menu__close');
     const body = document.querySelector('body');
     const overlay = document.querySelector('.overlay');
-    menuBtn.addEventListener('click', (e) => {
-      menu.classList.toggle('active');
-      overlay.classList.toggle('active');
-      body.classList.toggle('no-scroll');
-    });
-    overlay.addEventListener('click', (e) => {
-      menu.classList.remove('active');
-      overlay.classList.remove('active');
-      body.classList.remove('no-scroll');
-    });
-    menuCloseBtn.addEventListener('click', (e) => {
-      menu.classList.remove('active');
-      overlay.classList.remove('active');
-      body.classList.remove('no-scroll');
-    });
+    if (menu) {
+      menuBtn.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+      });
+      overlay.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+      menuCloseBtn.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+    }
   })();
+
+  // * ===== Accordion
+  const toggleAccordion = (accordionControl, accordionContent, accordion) => {
+    const filters = document.querySelectorAll(accordionControl);
+    filters.forEach((el) => {
+      if (el) {
+        el.addEventListener('click', (e) => {
+          const target = e.target.closest(accordion);
+          const content = target.querySelector(accordionContent);
+          target.classList.toggle('active');
+          if (target.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          } else {
+            content.style.maxHeight = null;
+          }
+        });
+      }
+    });
+  };
+  toggleAccordion('.accordion-control', '.accordion-content', '.accordion');
 
   //   // * ===== Modal
   //   (function modals() {
