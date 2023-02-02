@@ -1,0 +1,350 @@
+<section class="create-resume">
+  <div class="container container--small">
+    <h1 class="create-resume__title">Создание резюме</h1>
+
+    <form class="create-resume__form form-resume">
+      <div class="form-resume__cols">
+        <div class="form-resume__box form-resume__box--cols">
+          <div>
+            <h2 class="form-resume__title">Контактные данные</h2>
+            <div class="form-resume__groups">
+              <div class="form-resume__group">
+                <label class="form-resume__label">Имя</label>
+                <input
+                  class="form-resume__input"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="form-resume__group">
+                <label class="form-resume__label">Фамилия</label>
+                <input
+                  class="form-resume__input"
+                  type="text"
+                  placeholder="Ваша фамилия"
+                />
+              </div>
+              <div class="form-resume__group">
+                <label class="form-resume__label">Телефон</label>
+                <div class="form-resume__group-right">
+                  <input
+                    class="form-resume__input"
+                    type="text"
+                    placeholder="+7 (950) 123-45-67"
+                  />
+                  <span class="form-resume__confirmed"></span>
+                  <span class="form-resume__text">Телефон подтвержден</span>
+                </div>
+              </div>
+              <div class="form-resume__group">
+                <label class="form-resume__label">E-mail</label>
+                <input
+                  class="form-resume__input"
+                  type="text"
+                  placeholder="Ваш e-mail"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-actions">
+            <select class="form-actions__select">
+              <option value="1">На русском</option>
+              <option value="2">На русском</option>
+              <option value="3">На русском</option>
+            </select>
+
+            <button
+              class="form-actions__btn form-actions__btn--printer"
+              aria-label="Принтер"
+            ></button>
+            <button
+              class="form-actions__btn form-actions__btn--trash"
+              aria-label="Удалить"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-resume__box">
+        <h2 class="form-resume__title">Основная информация</h2>
+        <div class="form-resume__groups">
+          <div class="form-resume__group">
+            <label class="form-resume__label">Дата рождения</label>
+            <input
+              class="form-resume__input"
+              type="text"
+              placeholder="день / мес / год "
+            />
+          </div>
+          <div class="form-resume__group">
+            <label class="form-resume__label">Пол</label>
+            <select class="form-resume__select">
+              <option value="1">Укажите пол</option>
+              <option value="2">Укажите пол</option>
+              <option value="3">Укажите пол</option>
+            </select>
+          </div>
+          <div class="form-resume__group">
+            <label class="form-resume__label">Гражданство</label>
+            <div class="form-resume__group-right">
+              <input
+                class="form-resume__input form-resume__input--pr"
+                type="text"
+                placeholder="Добавить"
+              />
+              <button
+                class="form-resume__add"
+                type="button"
+                aria-label="Добавить"
+              ></button>
+
+              <ul class="citizenship">
+                <li class="citizenship__item">
+                  Россия
+                  <button
+                    class="citizenship__btn"
+                    type="button"
+                    aria-label="Удалить"
+                  ></button>
+                </li>
+                <li class="citizenship__item">
+                  Россия
+                  <button
+                    class="citizenship__btn"
+                    type="button"
+                    aria-label="Удалить"
+                  ></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-resume__box">
+        <h2 class="form-resume__title">Основная информация</h2>
+        <div class="form-resume__groups">
+          <div class="form-resume__group form-resume__group--w-full">
+            <label class="form-resume__label">Опыт работы</label>
+            <div class="form-resume__checkboxes">
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="radio"
+                  name="experience"
+                  checked
+                />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">Есть опыт работы</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="radio" name="experience" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">Нет опыта работы</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-resume__group">
+            <label class="form-resume__label">Желаемая должность</label>
+            <input
+              class="form-resume__input"
+              type="text"
+              placeholder="Укажите должность"
+            />
+          </div>
+          <div class="form-resume__group">
+            <label class="form-resume__label">Зарплата</label>
+            <div class="form-resume__salary">
+              <input class="form-resume__input" type="text" />
+              <select class="form-resume__select">
+                <option value="1">$</option>
+                <option value="2">$</option>
+                <option value="3">$</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-resume__box">
+        <h2 class="form-resume__title">Опыт работы</h2>
+        <div class="form-resume__groups">
+          <div class="form-resume__group form-resume__group--w-full">
+            <label class="form-resume__label">Опишите опыт работы</label>
+
+            <textarea
+              class="form-resume__input form-resume__input--textarea"
+              placeholder="Ваше последнее место работы, должность, обязанности"
+            ></textarea>
+          </div>
+          <div class="form-resume__group form-resume__group--w-full">
+            <label class="form-resume__label">О себе</label>
+
+            <textarea
+              class="form-resume__input form-resume__input--textarea"
+              placeholder="Раскажите о своих знаниях, качествах, увлечениях"
+            ></textarea>
+          </div>
+
+          <div class="form-resume__group">
+            <label class="form-resume__label">Ключевые навыки</label>
+            <div class="form-resume__group-right">
+              <input
+                class="form-resume__input form-resume__input--pr"
+                type="text"
+                placeholder="Добавить"
+              />
+              <button
+                class="form-resume__add"
+                type="button"
+                aria-label="Добавить"
+              ></button>
+
+              <ul class="citizenship">
+                <li class="citizenship__item">
+                  Обучаемость
+                  <button
+                    class="citizenship__btn"
+                    type="button"
+                    aria-label="Удалить"
+                  ></button>
+                </li>
+                <li class="citizenship__item">
+                  Обучаемость
+                  <button
+                    class="citizenship__btn"
+                    type="button"
+                    aria-label="Удалить"
+                  ></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-resume__box">
+        <h2 class="form-resume__title">Образование</h2>
+        <div class="form-resume__groups">
+          <div class="form-resume__group">
+            <label class="form-resume__label">Уровень</label>
+            <select class="form-resume__select">
+              <option value="1">Высшее</option>
+              <option value="2">Высшее</option>
+              <option value="3">Высшее</option>
+            </select>
+          </div>
+          <div class="form-resume__group">
+            <label class="form-resume__label">Учебное заведение</label>
+
+            <div class="form-resume__group-right">
+              <input
+                class="form-resume__input"
+                type="text"
+                placeholder="Название или аббревиатура "
+              />
+              <button
+                class="form-resume__btn-study btn btn--transparent"
+                type="button"
+              >
+                Указать еще одно место обучения
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-resume__box">
+        <h2 class="form-resume__title">Владение языками</h2>
+        <div class="form-resume__groups">
+          <div class="form-resume__group">
+            <label class="form-resume__label">Родной язык</label>
+            <select class="form-resume__select">
+              <option value="1">Русский</option>
+              <option value="2">Русский</option>
+              <option value="3">Русский</option>
+            </select>
+          </div>
+          <div class="form-resume__group">
+            <label class="form-resume__label">Иностранные языки</label>
+            <div class="form-resume__group-right">
+              <input
+                class="form-resume__input form-resume__input--pr"
+                type="text"
+                placeholder="Добавить"
+              />
+              <button
+                class="form-resume__add"
+                type="button"
+                aria-label="Добавить"
+              ></button>
+
+              <ul class="citizenship">
+                <li class="citizenship__item">
+                  Английский
+                  <button
+                    class="citizenship__btn"
+                    type="button"
+                    aria-label="Удалить"
+                  ></button>
+                </li>
+                <li class="citizenship__item">
+                  Английский
+                  <button
+                    class="citizenship__btn"
+                    type="button"
+                    aria-label="Удалить"
+                  ></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-resume__box">
+        <div class="form-resume__groups">
+          <div class="form-resume__group form-resume__group--w-full">
+            <label class="form-resume__label form-resume__label--pt-0"
+              >Страна поиска работы</label
+            >
+            <div class="form-resume__checkboxes">
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">Армения</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">Казахстан</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">Турция</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">Грузия</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" />
+                <span class="checkbox__box"></span>
+                <span class="checkbox__text">ОАЭ</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-resume__box">
+        <button class="form__resume__btn btn" type="submit">
+          Сохранить и опубликовать
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
