@@ -49,19 +49,23 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Fixed Header
   (function fixedHeader() {
     function scrollHeader() {
-      const nav = document.querySelector('header');
-      if (this.scrollY >= 30) {
-        nav.classList.add('scroll-header');
-      } else {
-        nav.classList.remove('scroll-header');
+      const nav = document.querySelector('.header-fixed');
+      if (nav) {
+        if (this.scrollY >= 30) {
+          nav.classList.add('scroll-header');
+        } else {
+          nav.classList.remove('scroll-header');
+        }
       }
     }
     window.addEventListener('scroll', scrollHeader);
     // ! Change
     function changeBg() {
-      const header = document.querySelector('header');
-      if (window.pageYOffset >= 30) {
-        header.classList.add('scroll-header');
+      const header = document.querySelector('.header-fixed');
+      if (header) {
+        if (window.pageYOffset >= 30) {
+          header.classList.add('scroll-header');
+        }
       }
     }
     changeBg();
