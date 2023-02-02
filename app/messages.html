@@ -100,7 +100,7 @@
 
     <div class="site-wrapper">
       <div class="grid">
-        <div class="grid__aside aside">
+        <aside class="grid__aside aside">
           <div class="aside__top">
             <a class="aside__logo logo" href="#">
               <img src="img/logo.png" alt="logo" />
@@ -132,7 +132,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </aside>
         <div class="grid__right">
           <header class="header header--small">
   <!-- Mobile Menu -->
@@ -166,16 +166,108 @@
 </header>
 
 
-          <main class="main mt"><section class="favorites">
+          <main class="main mt"><section class="messages">
   <div class="container">
-    <h1 class="favorites__title">Избранные</h1>
-    <div class="favorites__content">
-      <picture>
-        <source srcset="img/fav-empty.webp" type="image/webp" />
-        <img class="favorites__img" src="img/fav-empty.png" alt="img" />
-      </picture>
-      <div class="favorites__text">Список избранных вакансий пуст</div>
-    </div>
+    <h1 class="messages__title">Сообщения</h1>
+
+    <ul class="messages__list">
+      <li class="messages-item">
+        <div class="messages-item__company">
+          <picture>
+            <source srcset="img/companies/1.webp" type="image/webp" />
+            <img
+              class="messages-item__img"
+              src="img/companies/1.png"
+              alt="img"
+            />
+          </picture>
+          <h3 class="messages-item__title">Название компании</h3>
+        </div>
+        <div class="messages-item__text">
+          <p>Здравствуйте! Мы ознакомились с Вашим резюме....</p>
+        </div>
+        <div class="messages-item__right">
+          <span class="messages-item__indicator"></span>
+          <button
+            class="messages-item__remove"
+            type="button"
+            aria-label="Удалить"
+          ></button>
+        </div>
+      </li>
+      <li class="messages-item">
+        <div class="messages-item__company">
+          <picture>
+            <source srcset="img/companies/2.webp" type="image/webp" />
+            <img
+              class="messages-item__img"
+              src="img/companies/2.png"
+              alt="img"
+            />
+          </picture>
+          <h3 class="messages-item__title">Название компании</h3>
+        </div>
+        <div class="messages-item__text">
+          <p>Здравствуйте! Мы ознакомились с Вашим резюме....</p>
+        </div>
+        <div class="messages-item__right">
+          <span class="messages-item__indicator"></span>
+          <button
+            class="messages-item__remove"
+            type="button"
+            aria-label="Удалить"
+          ></button>
+        </div>
+      </li>
+      <li class="messages-item">
+        <div class="messages-item__company">
+          <picture>
+            <source srcset="img/companies/3.webp" type="image/webp" />
+            <img
+              class="messages-item__img"
+              src="img/companies/3.png"
+              alt="img"
+            />
+          </picture>
+          <h3 class="messages-item__title">Название компании</h3>
+        </div>
+        <div class="messages-item__text">
+          <p>Здравствуйте! Мы ознакомились с Вашим резюме....</p>
+        </div>
+        <div class="messages-item__right">
+          <span class="messages-item__indicator"></span>
+          <button
+            class="messages-item__remove"
+            type="button"
+            aria-label="Удалить"
+          ></button>
+        </div>
+      </li>
+      <li class="messages-item">
+        <div class="messages-item__company">
+          <picture>
+            <source srcset="img/companies/4.webp" type="image/webp" />
+            <img
+              class="messages-item__img"
+              src="img/companies/4.png"
+              alt="img"
+            />
+          </picture>
+          <h3 class="messages-item__title">Название компании</h3>
+        </div>
+        <div class="messages-item__text">
+          <p>Здравствуйте! Мы ознакомились с Вашим резюме....</p>
+        </div>
+        <div class="messages-item__right">
+          <span class="messages-item__indicator"></span>
+          <button
+            class="messages-item__remove"
+            type="button"
+            aria-label="Удалить"
+          ></button>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 </main>

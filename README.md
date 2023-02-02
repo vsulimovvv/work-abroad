@@ -10,8 +10,10 @@
 
 Создание резюме: https://vsulimovvv.github.io/work-abroad/app/faq.html  
 Личные данные: https://vsulimovvv.github.io/work-abroad/app/faq.html  
-Мои резюме: https://vsulimovvv.github.io/work-abroad/app/faq.html  
-Мои резюме (пустые): https://vsulimovvv.github.io/work-abroad/app/faq.html  
+
+Мои резюме: https://vsulimovvv.github.io/work-abroad/app/resume.html  
+Мои резюме (пустые): https://vsulimovvv.github.io/work-abroad/app/resume-empty.html  
+
 Сообщения: https://vsulimovvv.github.io/work-abroad/app/faq.html  
 При открытии сообщения: https://vsulimovvv.github.io/work-abroad/app/faq.html  
 
