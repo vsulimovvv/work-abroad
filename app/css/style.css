@@ -1520,8 +1520,30 @@ body.no-scroll {
 .header.scroll-header {
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  background-color: var(--color-dark);
+  background-color: var(--color-white);
   padding: 15px 0;
+}
+.header.scroll-header.header--main .header__btn {
+  border-color: var(--color-accent);
+  color: var(--color-dark);
+}
+.header.scroll-header.header--main .header__btn:hover {
+  color: var(--color-white);
+}
+.header.scroll-header.header--main .menu__link {
+  color: var(--color-dark);
+}
+.header.scroll-header.header--main .menu__link:hover {
+  color: var(--color-accent);
+}
+.header.scroll-header.header--main .header__logo {
+  display: none;
+}
+.header.scroll-header.header--main .header__logo--scroll {
+  display: block;
+}
+.header.header--main .header__logo--scroll {
+  display: none;
 }
 .header--white, .header--small {
   background-color: var(--color-white);
