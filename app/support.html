@@ -48,7 +48,7 @@
   </head>
 
   <body>
-    <div class="popup popup--online-booking">
+    <div class="popup popup--login">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -56,42 +56,92 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
-      <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
-      </div>
+      <span class="popup__title">Вход</span>
 
       <form class="form-submit">
         <div class="form-submit__group">
-          <label class="form-submit__label" for="online-name">Имя</label>
+          <label class="form-submit__label">E-mail</label>
 
           <input
             class="form-submit__input"
-            name="name"
-            id="online-name"
-            type="text"
-            placeholder="Введите ваше имя"
+            type="email"
+            placeholder="Введите Вашу электронную почту"
             required
           />
         </div>
         <div class="form-submit__group">
-          <label class="form-submit__label" for="online-tel">
-            Контактный телефон
+          <label class="form-submit__label">Пароль</label>
+          <div class="form-submit__input-wrap form-wrap">
+            <input
+              class="form-submit__input input-pas"
+              type="password"
+              placeholder="Введите пароль повторно"
+            />
+            <button class="btn-change-password">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.24 13 6 10.76 6 8C6 5.24 8.24 3 11 3C13.76 3 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.34 5 8 6.34 8 8C8 9.66 9.34 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="form-submit__save">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text"> Оставаться в системе </span>
           </label>
 
-          <input
-            class="form-submit__input"
-            name="tel"
-            id="online-tel"
-            type="tel"
-            placeholder="+7 (___) ___-__-__"
-            required
-          />
+          <a class="form-submit__forgot" href="#">Забыли пароль?</a>
         </div>
 
-        <button class="form-submit__btn btn" type="button">
-          Заказать звонок
-        </button>
+        <button class="form-submit__btn btn" type="button">Войти</button>
+
+        <div class="form-submit__socials-reg socials-reg">
+          <span class="socials-reg__name">Войти с помощью</span>
+          <ul class="socials-reg__list">
+            <li class="socials-reg__item">
+              <a class="socials-reg__link" href="#">
+                <picture>
+                  <source srcset="img/socials/vk.webp" type="image/webp" />
+                  <img src="img/socials/vk.png" alt="img" />
+                </picture>
+              </a>
+            </li>
+            <li class="socials-reg__item">
+              <a class="socials-reg__link" href="#">
+                <picture>
+                  <source srcset="img/socials/ok.webp" type="image/webp" />
+                  <img src="img/socials/ok.png" alt="img" />
+                </picture>
+              </a>
+            </li>
+            <li class="socials-reg__item">
+              <a class="socials-reg__link" href="#">
+                <picture>
+                  <source srcset="img/socials/yandex.webp" type="image/webp" />
+                  <img src="img/socials/yandex.png" alt="img" />
+                </picture>
+              </a>
+            </li>
+            <li class="socials-reg__item">
+              <a class="socials-reg__link" href="#">
+                <picture>
+                  <source srcset="img/socials/google.webp" type="image/webp" />
+                  <img src="img/socials/google.png" alt="img" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
       </form>
     </div>
   </div>
@@ -170,7 +220,8 @@
           </li>
         </ul>
       </div>
-      <button class="header__btn" type="button">Войти</button>
+      <button class="header__btn btn-login" type="button">Войти</button>
+      
       <button class="header__toggle" type="button" aria-label="Открыть меню">
         <span class="header__toggle-line"></span>
       </button>
@@ -190,11 +241,25 @@
         <option value="3">Выберите тему запроса</option>
       </select>
 
-      <label>
+      <label class="form-support__input-wrap">
         <textarea
           class="form-support__input form-support__input--textarea"
           placeholder="Сообщение"
         ></textarea>
+        <a class="btn-attach" href="#" download>
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.5 7.5L7.743 13.257C6.94385 14.0356 5.87016 14.4681 4.75444 14.4609C3.63871 14.4536 2.57075 14.0072 1.78179 13.2182C0.992839 12.4293 0.546397 11.3613 0.539137 10.2456C0.531877 9.12984 0.964383 8.05615 1.743 7.257L7.672 1.328C8.20244 0.797567 8.92186 0.499573 9.672 0.499573C10.4221 0.499573 11.1416 0.797567 11.672 1.328C12.2024 1.85843 12.5004 2.57785 12.5004 3.328C12.5004 4.07815 12.2024 4.79757 11.672 5.328L5.914 11.086C5.64879 11.3512 5.28908 11.5002 4.914 11.5002C4.53893 11.5002 4.17922 11.3512 3.914 11.086C3.64879 10.8208 3.49979 10.4611 3.49979 10.086C3.49979 9.71093 3.64879 9.35122 3.914 9.086L9.5 3.5"
+              stroke="currentColor"
+            />
+          </svg>
+        </a>
       </label>
 
       <div class="form-support__inputs">
