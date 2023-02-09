@@ -1982,6 +1982,11 @@ body.no-scroll {
     padding-top: 200px;
   }
 }
+@media screen and (max-height: 650px) {
+  .hero__wrapper {
+    padding-top: 170px;
+  }
+}
 @media (max-width: 991.98px) {
   .hero__wrapper {
     height: auto;
@@ -2133,6 +2138,7 @@ body.no-scroll {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 10px;
+  border-radius: 50%;
 }
 @media (max-width: 359.98px) {
   .hero__country img {
@@ -2520,7 +2526,6 @@ body.no-scroll {
   }
 }
 .vacancies .vacancies-item__name {
-  margin-bottom: 10px;
   font-size: 15px;
 }
 @media (max-width: 1300px) {
@@ -2529,14 +2534,6 @@ body.no-scroll {
         13px + 2 *
           ((100vw - 360px) / 940)
       );
-  }
-}
-.vacancies .vacancies-item__text {
-  font-size: 12px;
-}
-@media (max-width: 576px) {
-  .vacancies .vacancies-item__text {
-    font-size: 11px;
   }
 }
 .vacancies .vacancies-item__info {
@@ -2554,6 +2551,7 @@ body.no-scroll {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  padding: 0;
 }
 
 .steps {
@@ -2631,6 +2629,14 @@ body.no-scroll {
 }
 .steps .steps-item:last-child .steps-item__img::before {
   display: none;
+}
+.steps .steps-item a {
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+}
+.steps .steps-item a:hover {
+  color: var(--color-accent);
 }
 .steps .steps-item__img {
   margin-bottom: 20px;
