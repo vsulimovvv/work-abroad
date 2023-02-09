@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Fixed Header
   (function fixedHeader() {
     function scrollHeader() {
-      const nav = document.querySelector('.header-fixed');
+      const nav = document.querySelector('.header');
       if (nav) {
         if (this.scrollY >= 30) {
           nav.classList.add('scroll-header');
@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', scrollHeader);
     // ! Change
     function changeBg() {
-      const header = document.querySelector('.header-fixed');
+      const header = document.querySelector('.header');
       if (header) {
         if (window.pageYOffset >= 30) {
           header.classList.add('scroll-header');

@@ -149,7 +149,7 @@
 
 
     <div class="site-wrapper">
-      <header class="header header--white header-fixed">
+      <header class="header header-fixed header--small header--catalog">
   <!-- Mobile Menu -->
   <div class="overlay"></div>
 
@@ -207,21 +207,68 @@
       <a class="header__logo logo" href="#">
         <img src="img/logo-dark.png" alt="img" />
       </a>
-      <div class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#">О сервисе</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Цена</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Помощь</a>
-          </li>
-        </ul>
+
+      <div class="header__catalog-wrap">
+        <a class="header__catalog" href="#">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0H2V2H0V0ZM7 0H9V2H7V0ZM14 0H16V2H14V0ZM0 7H2V9H0V7ZM7 7H9V9H7V7ZM14 7H16V9H14V7ZM0 14H2V16H0V14ZM7 14H9V16H7V14ZM14 14H16V16H14V14Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span> Каталог вакансий </span>
+        </a>
+
+        <div class="dropmenu">
+          <ul class="dropmenu__list">
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Каталог вакансий</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Каталог вакансий</a>
+            </li>
+            <li class="dropmenu__item">
+              <a class="dropmenu__link" href="#">Каталог вакансий</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <button class="header__btn btn-login" type="button">Войти</button>
-      
+
+      <a class="header__help" href="#"> Помощь </a>
+
+      <ul class="header-tools">
+        <li class="header-tools__item">
+          <a class="header-tools__link header-tools__link--search" href="#"></a>
+        </li>
+        <li class="header-tools__item">
+          <a class="header-tools__link header-tools__link--fav" href="#"></a>
+        </li>
+        <li class="header-tools__item">
+          <a class="header-tools__link header-tools__link--message" href="#">
+          </a>
+        </li>
+        <li class="header-tools__item header-tools__item--user">
+          <a class="header-tools__link header-tools__link--user" href="#"></a>
+
+          <div class="dropmenu dropmenu--right">
+            <ul class="dropmenu__list">
+              <li class="dropmenu__item">
+                <a class="dropmenu__link" href="#">Выйти</a>
+              </li>
+              <li class="dropmenu__item">
+                <a class="dropmenu__link" href="#">Войти</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
       <button class="header__toggle" type="button" aria-label="Открыть меню">
         <span class="header__toggle-line"></span>
       </button>
@@ -477,13 +524,22 @@
               <li class="footer__item">
                 <a class="footer__link" href="#"> Турция </a>
               </li>
-            </ul>
-            <ul class="footer__list">
               <li class="footer__item">
                 <a class="footer__link" href="#"> Грузия </a>
               </li>
+            </ul>
+            <ul class="footer__list">
               <li class="footer__item">
                 <a class="footer__link" href="#"> ОАЭ </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Польша </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Сербия </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Черногория </a>
               </li>
             </ul>
           </div>
