@@ -6,7 +6,7 @@
 Регистрация: https://vsulimovvv.github.io/work-abroad/app/registration.html  
 Помощь: https://vsulimovvv.github.io/work-abroad/app/help.html  
 Часто задаваемые вопросы: https://vsulimovvv.github.io/work-abroad/app/faq.html  
-Запрос в тех. поддержку: https://vsulimovvv.github.io/work-abroad/app/faq.html  
+Запрос в тех. поддержку: https://vsulimovvv.github.io/work-abroad/app/support.html  
 Создание резюме: https://vsulimovvv.github.io/work-abroad/app/create-resume.html  
 Личные данные: https://vsulimovvv.github.io/work-abroad/app/personal.html  
 Мои резюме: https://vsulimovvv.github.io/work-abroad/app/resume.html  
