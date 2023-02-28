@@ -52,22 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  //   // * ===== Slider
-  //   (function slider() {
-  //     const sliderEl = document.querySelector('.price-list-top__slider');
-  //     new Swiper(sliderEl, {
-  //       slidesPerView: 'auto',
-  //       centeredSlides: true,
-  //       slideToClickedSlide: true,
-  //       initialSlide: 4,
-  //       spaceBetween: 20,
-  //       navigation: {
-  //         nextEl: '.price-list-top__slider .swiper-button-next',
-  //         prevEl: '.price-list-top__slider .swiper-button-prev',
-  //       },
-  //     });
-  //   })();
-
   // * ===== Fixed Header
   (function fixedHeader() {
     function scrollHeader() {
@@ -115,33 +99,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
 
       menuClose.addEventListener('click', (e) => {
-        menu.classList.remove('active');
-        overlay.classList.remove('active');
-        body.classList.remove('no-scroll');
-      });
-    }
-  })();
-
-  // * ===== Show Aside
-  (function showMenu() {
-    const menuBtn = document.querySelector('.show-aside-btn');
-    const menu = document.querySelector('.aside');
-    const menuCloseBtn = document.querySelector('.mobile-menu__close');
-    const body = document.querySelector('body');
-    const overlay = document.querySelector('.overlay');
-
-    if (menu) {
-      menuBtn.addEventListener('click', (e) => {
-        menu.classList.toggle('active');
-        overlay.classList.toggle('active');
-        body.classList.toggle('no-scroll');
-      });
-      overlay.addEventListener('click', (e) => {
-        menu.classList.remove('active');
-        overlay.classList.remove('active');
-        body.classList.remove('no-scroll');
-      });
-      menuCloseBtn.addEventListener('click', (e) => {
         menu.classList.remove('active');
         overlay.classList.remove('active');
         body.classList.remove('no-scroll');
@@ -227,6 +184,11 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
     bindModal('.btn-login', '.popup--login', '.popup__close');
+    bindModal('.btn-fio', '.popup-fio', '.popup__close');
+    bindModal('.btn-password', '.popup-password', '.popup__close');
+    bindModal('.btn-phone', '.popup-phone', '.popup__close');
+    bindModal('.btn-email', '.popup-email', '.popup__close');
+    bindModal('.btn-country', '.popup-country', '.popup__close');
   })();
 
   // * ===== Toggle Tabs
@@ -274,4 +236,25 @@ window.addEventListener('DOMContentLoaded', () => {
     '.catalog__content',
     'active'
   );
+
+  // * ===== Show Aside
+  (function showMenu() {
+    const menuBtn = document.querySelector('.show-aside-btn');
+    const menu = document.querySelector('.aside');
+    const body = document.querySelector('body');
+    const overlay = document.querySelector('.overlay');
+
+    if (menu) {
+      menuBtn.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+        overlay.classList.toggle('active');
+        body.classList.toggle('no-scroll');
+      });
+      overlay.addEventListener('click', (e) => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+      });
+    }
+  })();
 });
