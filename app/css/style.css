@@ -748,6 +748,40 @@ body.no-scroll {
   }
 }
 
+input[type=file] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-accent);
+  -webkit-transition: 150ms ease;
+  -o-transition: 150ms ease;
+  transition: 150ms ease;
+  font-size: 16px;
+  padding: 3px;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+}
+@media (max-width: 1300px) {
+  .custom-file-upload {
+    font-size: calc(
+        14px + 2 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+.custom-file-upload:hover {
+  border-bottom-color: 1px solid var(--color-accent);
+}
+
 @-webkit-keyframes opacity-visibility {
   0% {
     opacity: 0;

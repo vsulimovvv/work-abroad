@@ -38,12 +38,16 @@
           <div class="personal__item">
             <div class="personal__name">E-mail</div>
             <input class="personal__input" value="info@ivanov@mail.ru" />
-            <button class="personal__change btn-email" type="button">Изменить</button>
+            <button class="personal__change btn-email" type="button">
+              Изменить
+            </button>
           </div>
           <div class="personal__item">
             <div class="personal__name">Страна поиска работы</div>
             <input class="personal__input" value="Армения" />
-            <button class="personal__change btn-country" type="button">Изменить</button>
+            <button class="personal__change btn-country" type="button">
+              Изменить
+            </button>
           </div>
           <div class="personal__item">
             <div class="personal__name">Социальные сети</div>
@@ -125,9 +129,19 @@
               <img src="img/avatar.png" alt="avatar" />
             </picture>
 
-            <a class="personal__add-photo" href="#" download=""
-              >Добавить фото</a
+            <label
+              class="custom-file-upload custom-file-upload--add-phote"
+              for="add-phote"
             >
+              Добавить фото
+            </label>
+            <input
+              id="add-phote"
+              type="file"
+              name="add-phote"
+              class="input-file-upload"
+              multiple
+            />
           </div>
           <p class="personal__text">
             Это фото будет отображаться <br />
