@@ -1771,7 +1771,9 @@ input[type=file] {
   display: grid;
   -ms-grid-columns: auto auto;
   grid-template-columns: auto auto;
-  gap: 40px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 .footer__item:not(:last-child) {
   margin-bottom: 10px;
@@ -1892,6 +1894,9 @@ input[type=file] {
 }
 .header.scroll-header.header--main .header__btn:hover {
   color: var(--color-white);
+}
+.header.scroll-header.header--main .header__toggle-line {
+  background-color: var(--color-dark);
 }
 .header.scroll-header.header--main .menu__link {
   color: var(--color-dark);
@@ -2516,14 +2521,28 @@ input[type=file] {
   padding-top: 300px;
   padding-bottom: 50px;
 }
-@media screen and (max-height: 800px) {
-  .hero__wrapper {
-    padding-top: 200px;
-  }
-}
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 991px) {
   .hero__wrapper {
     padding-top: 170px;
+  }
+  .hero__wrapper .hero__text {
+    margin-bottom: 25px;
+  }
+  .hero__wrapper .hero__countries {
+    row-gap: 15px;
+  }
+  .hero__wrapper .hero__country {
+    height: 50px;
+  }
+  .hero__wrapper .hero__country img {
+    min-width: 28px;
+    max-width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (max-height: 730px) {
+  .hero__wrapper {
+    height: auto;
   }
 }
 @media (max-width: 991.98px) {
